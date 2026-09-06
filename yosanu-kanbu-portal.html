@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>与謝ぬ隊 幹部詰所</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EDE6D3;
+    --paper-deep: #E3DAC2;
+    --ink: #2B2620;
+    --ink-soft: #5B5347;
+    --seal: #8F332C;
+    --seal-deep: #6E241F;
+    --moss: #4E5E40;
+    --gold: #A17F2E;
+    --rule: #C9BE9E;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(160,140,100,0.10), transparent 40%),
+      radial-gradient(circle at 88% 92%, rgba(160,140,100,0.10), transparent 40%);
+    color: var(--ink);
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    padding: 0 0 4rem;
+  }
+
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+    position: relative;
+    border-bottom: 6px solid var(--seal);
+  }
+
+  header .seal {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--seal);
+    border-radius: 4px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--seal);
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: 20px;
+    background: rgba(143,51,44,0.12);
+  }
+
+  header h1 {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 13px;
+    color: #C9C2B0;
+    letter-spacing: 0.08em;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+  }
+
+  section {
+    margin-bottom: 2.75rem;
+  }
+
+  .cat-label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .cat-label .bar {
+    width: 4px;
+    height: 20px;
+    background: var(--seal);
+  }
+
+  .cat-label h2 {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .cat-label span {
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  @media (min-width: 480px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+  }
+
+  a.card {
+    display: block;
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 1.1rem 1.2rem;
+    text-decoration: none;
+    color: var(--ink);
+    position: relative;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  a.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--moss);
+  }
+
+  a.card:hover {
+    border-color: var(--seal);
+    background: #E9E1C9;
+  }
+
+  a.card .title {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 0 0.35rem;
+  }
+
+  a.card .url {
+    font-size: 11px;
+    color: var(--ink-soft);
+    word-break: break-all;
+  }
+
+  a.card .go {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-size: 12px;
+    color: var(--seal-deep);
+  }
+
+  footer {
+    max-width: 640px;
+    margin: 3rem auto 0;
+    padding: 1.2rem 1.5rem 0;
+    border-top: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="seal">与謝</div>
+  <h1>与謝ぬ隊 幹部詰所</h1>
+  <p>幹部専用リンク集</p>
+</header>
+
+<main>
+
+  <section>
+    <div class="cat-label"><div class="bar"></div><h2>内政・記録</h2><span>台帳・触書</span></div>
+    <div class="cards">
+      <a class="card" href="https://kiz2103.github.io/rojo/" target="_blank" rel="noopener">
+        <p class="title">籠城台帳</p>
+        <p class="url">kiz2103.github.io/rojo</p>
+        <span class="go">開く →</span>
+      </a>
+      <a class="card" href="https://3594-editor.pages.dev/" target="_blank" rel="noopener">
+        <p class="title">御触書エディタ</p>
+        <p class="url">3594-editor.pages.dev</p>
+        <span class="go">開く →</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="cat-label"><div class="bar"></div><h2>組織運営</h2><span>人事・募集</span></div>
+    <div class="cards">
+      <a class="card" href="https://yosanu666.github.io/recruit/" target="_blank" rel="noopener">
+        <p class="title">一門メンバー募集</p>
+        <p class="url">yosanu666.github.io/recruit</p>
+        <span class="go">開く →</span>
+      </a>
+      <a class="card" href="https://yosanu666.github.io/member-list/" target="_blank" rel="noopener">
+        <p class="title">隊員名簿</p>
+        <p class="url">yosanu666.github.io/member-list</p>
+        <span class="go">開く →</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="cat-label"><div class="bar"></div><h2>攻略資料</h2><span>ガイド</span></div>
+    <div class="cards">
+      <a class="card" href="https://claude.ai/public/artifacts/e4dcd789-9afd-40e2-81a2-bcd892425dc2" target="_blank" rel="noopener">
+        <p class="title">スタダガイド</p>
+        <p class="url">claude.ai/public/artifacts</p>
+        <span class="go">開く →</span>
+      </a>
+      <a class="card" href="https://kenbo-no-palette.com/" target="_blank" rel="noopener">
+        <p class="title">権謀のパレット</p>
+        <p class="url">kenbo-no-palette.com</p>
+        <span class="go">開く →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>与謝ぬ隊 幹部用</footer>
+
+</body>
+</html>
